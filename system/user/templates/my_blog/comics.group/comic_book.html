@@ -1,9 +1,17 @@
 {exp:channel:entries channel="comics_channel" require_entry="yes"}
 <!-- whatever is here will repeat for each entry -->
-    <h2>{title}</h2>
-   {body}
+  
+  {stylesheet='comics/main.css'}
+  <link rel="stylesheet" type="text/css" media="all" href="comics/main.css" />
 
-   <img src="{blog_image}">
-   {!-- <img src="{featured_image}"> --}
+
+<h1>Phil Test</h1>
+<div class="featured-image">
+   <img src="{featured_image}">
+</div>
+   <h2>{title}</h2>
+   {body}
+ 
+   <img src="{comic_image}">
 
 {/exp:channel:entries}
