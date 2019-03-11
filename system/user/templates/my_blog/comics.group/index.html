@@ -1,0 +1,15 @@
+<h1>Comics go here </h1>
+<h1>{site_name}</h1>  
+{exp:channel:entries channel="comics_channel" orderby="entry_date" sort="desc" limit="10"}
+<!-- whatever is here will repeat for each entry -->
+    <h2><a href="{url_title_path='comics/comic_book'}">{title}</a></h2>
+  
+    <img src="{featured_image}">
+    {if except}
+        {excerpt}
+    {if:else}
+        {body:limit characters="200"}
+    {/if}
+
+
+{/exp:channel:entries}
