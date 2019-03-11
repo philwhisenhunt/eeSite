@@ -1,5 +1,8 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+$config['is_system_on'] = 'y';
+$config['multiple_sites_enabled'] = 'n';
+$config['show_ee_news'] = 'n';
 $config['save_tmpl_files'] = 'y';
 // ExpressionEngine Config Items
 // Find more configs and overrides at
