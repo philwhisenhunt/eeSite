@@ -1,6 +1,11 @@
 <h1>{site_name}</h1>  
-{exp:channel:entries channel="blog" orderby="entry_date" sort="desc" limit="10"}
+{exp:channel:entries channel="blog2" orderby="entry_date" sort="desc" limit="10"}
 <!-- whatever is here will repeat for each entry -->
-
-
+    <h2><a href="{url_title_path='blog2templategroup/article'}">{title}</a></h2>
+    {if except}
+    {excerpt}
+    {if:else}
+        {body:limit characters="200"}
+    {/if}
+    <img src="{featured_image}">
 {/exp:channel:entries}
