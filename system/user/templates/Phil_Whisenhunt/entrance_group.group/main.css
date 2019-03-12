@@ -1,5 +1,18 @@
-.preamble{
-    font-size: 24px;
+.whole-container{
+width:80%;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.table{
+    display:table;
+    margin: 0 auto;
+    float: right;
+    width: 50%;
+}
+li {
+    display: inline;
+    padding: .8em;
 }
 
 .nav-bar{
@@ -7,6 +20,9 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: .9em;
     padding: 0em;
+    float: right;
+    /* display: inline; */
+   
 
 
 
@@ -15,5 +31,58 @@
 #site-name{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1em;
+    width:50%;
+    margin: 0em;
+    float: left;
+    /* padding: 10em; */
 
 }
+.title-area{
+    width: 100%;
+    height:5em;
+    margin: 0em;
+    border: 0;
+}
+
+.preamble{
+    font-size: 24px;
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+}
+
+.preamble-area{
+width:100%;
+display: inline-block;
+}
+
+.preamble-text{
+    width: 40%;
+    float: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+
+}
+
+.preamble-text p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .5em;
+
+}
+.preamble-pic{
+width: 40%;
+float: right;
+
+}
+.preamble-pic img{
+    float:right;
+}
+
+.post-amble{
+
+}
+
+.home-blog-container{
+    width: 100%;
+}
+

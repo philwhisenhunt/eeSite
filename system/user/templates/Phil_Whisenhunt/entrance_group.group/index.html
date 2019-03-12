@@ -11,33 +11,61 @@
 
     </head>
     <body>
-        <h1 id="site-name">{site_name}</h1>
+<div class="whole-container">
+        <div class="title-area">
+            <h1 id="site-name">{site_name}</h1>
+                <div class="table">
+                    <ul class="nav-bar">
 
-        <ul class="nav-bar">
+                        <li>Comics</li>
+                        <li>Store</li>
+                        <li>Code</li>
+                        <li>Sketches</li>
+                        <li>Blog</li>
+                        <li>Now</li>
+                    </ul>
 
-            <li>Comics</li>
-            <li>Store</li>
-            <li>Code</li>
-            <li>Sketches</li>
-            <li>Blog</li>
-            <li>Now</li>
-        </ul>
+                </div>
+
+        </div>
         {exp:channel:entries channel="entrance" orderby="entry_date" sort="desc" limit="1"}
-        <h2>{title}</h2>
-        <p class="preamble">{body}</p>
 
-        {exp:channel:entries}
+        <div class="preamble-area">
+            <div class="preamble-text">
+                <h2>{title}</h2>
+                <p class="preamble">{body}</p>
+            </div>
 
-       
-        <h3>blog Entries will go here:</h3>
+                
 
-        {exp:channel:entries channel="blog2" orderby="entry_date" sort="desc" limit="10"}
-            {!-- Whatever is in here will repeat for each entry --}
-            {!-- Appears to be similar to a foreach --}
-            <h2>{title}</h2>
-        {excerpt}
+        
 
+            <div class="preamble-pic">
+
+                <img src="{comic_image}" alt="" class="">
+            </div>
+
+        </div>
         {/exp:channel:entries}
+
+        <hr>
+        
+
+        <div class="home-blog-container">
+        
+            <h3>What I'm writing</h3>
+
+            {exp:channel:entries channel="blog2" orderby="entry_date" sort="desc" limit="10"}
+                {!-- Whatever is in here will repeat for each entry --}
+                {!-- Appears to be similar to a foreach --}
+                <h2>{title}</h2>
+                {excerpt}
+                {body}
+                
+
+            {/exp:channel:entries}
+        </div>
+    </div>
         
         <script src="" async defer></script>
     </body>
