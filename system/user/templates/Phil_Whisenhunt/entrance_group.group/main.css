@@ -60,13 +60,21 @@ display: inline-block;
     width: 40%;
     float: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    
 
+}
+.preamble-text a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-style: bold;
+    color: cornflowerblue;
 }
 
 .preamble-text p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: .5em;
+    font-size: 1em;
+    font-style: bold;
 
 }
 .preamble-pic{
