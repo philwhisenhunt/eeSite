@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/css" media="all" href="{stylesheet='entrance_group/main'}" />
+
+    </head>
+    <body>
+        <h1 id="site-name">{site_name}</h1>
+
+        <ul class="nav-bar">
+
+            <li>Comics</li>
+            <li>Store</li>
+            <li>Code</li>
+            <li>Sketches</li>
+            <li>Blog</li>
+            <li>Now</li>
+        </ul>
+
+        <h2>Phil Whisenhunt is a comic artist and programmer.</h2>
+
+        <p class="preamble"> Every day I have to draw from life, contribute to my comic, and code. Most weekends are spent creating a podcast about Narnia, and on occasion I design websites and apps. You can see what I’m listening to, what I’m reading, and have the highlights of what I’ve found sent directly to your inbox z(no pressure).
+        </p>
+
+        <h3>blog Entries will go here:</h3>
+
+        {exp:channel:entries channel="blog2" orderby="entry_date" sort="desc" limit="10"}
+        {!-- Whatever is in here will repeat for each entry --}
+        <h2>{title}</h2>
+        {excerpt}
+
+        {/exp:channel:entries}
+        
+        <script src="" async defer></script>
+    </body>
+</html>
