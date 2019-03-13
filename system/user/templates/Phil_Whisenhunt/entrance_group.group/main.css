@@ -107,6 +107,23 @@ float: right;
 
 .home-blog-container{
     width: 100%;
+    font-size: .8em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.home-blog-container h3{
+    width: 100%;
+    font-size: 2em;
+}
+
+.home-blog-container a{
+    color: black;
+    text-decoration: none;
+}
+.home-blog-container a:hover{
+    color: black;
+    text-decoration: underline;
+    
 }
 
 .footer{
